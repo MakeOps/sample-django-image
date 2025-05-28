@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+
+  celery:
+    build: .
+    command: /app/.venv/bin/celery -A app.tasks worker --loglevel=info
+    depends_on:
+      - redis
+
+  redis:
+    image: public.ecr.aws/docker/library/redis:latest
+    ports:
+      - 6379:6379

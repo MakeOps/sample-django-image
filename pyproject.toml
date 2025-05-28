@@ -1,0 +1,11 @@
+[project]
+name = "sample-django-image"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "celery[redis]>=5.5.2",
+    "django>=5.2.1",
+    "uvicorn>=0.34.2",
+]
