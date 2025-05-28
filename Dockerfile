@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN pip install uv
 
-COPY uv.lock pyproject.toml .
+COPY uv.lock pyproject.toml /app/
 
 RUN uv sync
 
