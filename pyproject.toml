@@ -5,9 +5,15 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "boto3>=1.38.27",
     "celery[redis]>=5.5.2",
     "django>=5.2.1",
     "httpx>=0.28.1",
     "requests>=2.32.3",
     "uvicorn>=0.34.2",
+]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.3.0",
 ]
