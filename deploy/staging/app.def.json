@@ -3,7 +3,7 @@
   "containerDefinitions": [
       {
           "name": "web",
-          "image": "<IMAGE_URL>",
+          "image": "<IMAGE_URI>",
           "cpu": 0,
           "links": [],
           "portMappings": [
