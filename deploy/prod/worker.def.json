@@ -83,7 +83,7 @@
   "tags": [
       {
           "key": "Environment",
-          "value": "staging"
+          "value": "prod"
       },
       {
           "key": "Application",

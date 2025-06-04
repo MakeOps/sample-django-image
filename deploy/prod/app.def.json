@@ -1,0 +1,63 @@
+{
+  "family": "AppServiceTaskDef33F77042",
+  "containerDefinitions": [
+      {
+          "name": "web",
+          "image": "<IMAGE_URL>",
+          "cpu": 0,
+          "links": [],
+          "portMappings": [
+              {
+                  "containerPort": 8000,
+                  "hostPort": 8000,
+                  "protocol": "tcp"
+              }
+          ],
+          "essential": true,
+          "entryPoint": [],
+          "command": [],
+          "environment": [],
+          "environmentFiles": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "secrets": [],
+          "dnsServers": [],
+          "dnsSearchDomains": [],
+          "extraHosts": [],
+          "dockerSecurityOptions": [],
+          "dockerLabels": {},
+          "ulimits": [],
+          "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-hkTUPYOgkeiR",
+                  "awslogs-region": "eu-north-1",
+                  "awslogs-stream-prefix": "AppService"
+              },
+              "secretOptions": []
+          },
+          "systemControls": [],
+          "credentialSpecs": []
+      }
+  ],
+  "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-n5oBnvuGxZbC",
+  "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-531RCH0sw3QD",
+  "networkMode": "awsvpc",
+  "volumes": [],
+  "placementConstraints": [],
+  "requiresCompatibilities": [
+      "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "tags": [
+      {
+          "key": "Environment",
+          "value": "prod"
+      },
+      {
+          "key": "Application",
+          "value": "parsleybox"
+      }
+  ]
+}
