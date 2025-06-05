@@ -30,21 +30,18 @@
           "logConfiguration": {
               "logDriver": "awslogs",
               "options": {
-                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-hkTUPYOgkeiR",
+                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-BMtILxCHJqYP",
                   "awslogs-region": "eu-north-1",
                   "awslogs-stream-prefix": "AppService"
               },
               "secretOptions": []
           },
           "systemControls": [],
-          "credentialSpecs": [],
-          "healthCheck": {
-            "command": [ "CMD-SHELL", "curl -f http://localhost:8000/ || exit 1" ]
-          }
+          "credentialSpecs": []
       }
   ],
-  "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-n5oBnvuGxZbC",
-  "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-531RCH0sw3QD",
+  "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-oLkZxUIPlLyK",
+  "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-g00fWiO8e6HO",
   "networkMode": "awsvpc",
   "volumes": [],
   "placementConstraints": [],
