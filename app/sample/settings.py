@@ -30,7 +30,7 @@ DEBUG = os.environ.get('DEBUG', 'false') == 'true'
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    "AppSer-AppSe-qEmXU92zbVuP-1199652338.eu-north-1.elb.amazonaws.com"
+    "appser-appse-gbrnuupp8fhi-117087328.eu-north-1.elb.amazonaws.com"
 ]
 
 # If running on AWS Fargate, add the Fargate IP address to the allowed hosts
