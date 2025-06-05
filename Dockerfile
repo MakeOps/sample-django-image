@@ -10,6 +10,8 @@ RUN uv sync
 
 FROM public.ecr.aws/docker/library/python:3.11-slim
 
+RUN apt-get update && apt-get install curl -y && rm -rf /var/lib/apt/lists/*
+
 WORKDIR /app
 
 COPY --from=build /app/.venv /app/.venv

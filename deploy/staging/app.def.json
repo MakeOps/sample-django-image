@@ -37,7 +37,10 @@
               "secretOptions": []
           },
           "systemControls": [],
-          "credentialSpecs": []
+          "credentialSpecs": [],
+          "healthCheck": {
+            "command": [ "CMD-SHELL", "curl -f http://localhost:8000/ || exit 1" ]
+          }
       }
   ],
   "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-n5oBnvuGxZbC",
