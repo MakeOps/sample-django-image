@@ -16,7 +16,7 @@ WORKDIR /app
 
 COPY --from=build /app/.venv /app/.venv
 
-COPY deploy/staging/nginx /etc/nginx/templates
+COPY deploy/nginx/server.conf.template /etc/nginx/templates/server.conf.template
 
 COPY . .
 
