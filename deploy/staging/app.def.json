@@ -68,9 +68,9 @@
           "logConfiguration": {
               "logDriver": "awslogs",
               "options": {
-                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-BMtILxCHJqYP",
+                  "awslogs-group": "AppService-AppServiceTaskDefnginxLogGroup9EF20E79-DI0iq9Pwob5Y",
                   "awslogs-region": "eu-north-1",
-                  "awslogs-stream-prefix": "Nginx"
+                  "awslogs-stream-prefix": "nginx"
               },
               "secretOptions": []
           },
