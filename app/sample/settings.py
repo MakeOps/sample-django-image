@@ -30,7 +30,7 @@ DEBUG = os.environ.get('DEBUG', 'false') == 'true'
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    "appser-appse-gbrnuupp8fhi-117087328.eu-north-1.elb.amazonaws.com"
+    "appser-appse-3gr9fty62prt-181733270.eu-north-1.elb.amazonaws.com"
 ]
 
 # If running on AWS Fargate, add the Fargate IP address to the allowed hosts
@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+STATIC_ROOT = '/volumes/static'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
