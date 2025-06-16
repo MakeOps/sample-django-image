@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-STATIC_ROOT = '/volumes/static'
+STATIC_ROOT = '/var/www/static'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

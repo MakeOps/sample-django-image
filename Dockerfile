@@ -24,4 +24,6 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["/app/.venv/bin/uvicorn", "--app-dir", "app", "sample.asgi:application", "--host", "0.0.0.0", "--port", "8000"]
+# CMD ["/app/.venv/bin/uvicorn", "--app-dir", "app", "sample.asgi:application", "--host", "0.0.0.0", "--port", "8000"]
+
+CMD ["/app/hack/start_server.sh"]
