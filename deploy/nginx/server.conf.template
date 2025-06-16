@@ -1,7 +1,6 @@
 server {
 
     listen ${NGINX_PORT};
-    server_name ${NGINX_SERVER_NAME} www.${NGINX_SERVER_NAME};  # Replace with your domain
 
     # Security headers
     add_header X-Frame-Options DENY;
