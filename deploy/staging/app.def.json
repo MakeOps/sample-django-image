@@ -20,7 +20,12 @@
           "environmentFiles": [],
           "mountPoints": [],
           "volumesFrom": [],
-          "secrets": [],
+          "secrets": [
+              {
+                  "name": "SAMPLE_SECRET",
+                  "valueFrom": "arn:aws:secretsmanager:eu-north-1:925313379209:secret:staging/secret/import/sample-BYQGTg"
+              }
+          ],
           "dnsServers": [],
           "dnsSearchDomains": [],
           "extraHosts": [],
@@ -33,6 +38,44 @@
                   "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-BMtILxCHJqYP",
                   "awslogs-region": "eu-north-1",
                   "awslogs-stream-prefix": "AppService"
+              },
+              "secretOptions": []
+          },
+          "systemControls": [],
+          "credentialSpecs": []
+      },
+      {
+          "name": "nginx",
+          "image": "public.ecr.aws/nginx/nginx:stable",
+          "cpu": 0,
+          "links": [],
+          "portMappings": [
+              {
+                  "containerPort": 80,
+                  "hostPort": 80,
+                  "protocol": "tcp"
+              }
+          ],
+          "essential": true,
+          "entryPoint": [],
+          "command": [],
+          "environment": [],
+          "environmentFiles": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "secrets": [],
+          "dnsServers": [],
+          "dnsSearchDomains": [],
+          "extraHosts": [],
+          "dockerSecurityOptions": [],
+          "dockerLabels": {},
+          "ulimits": [],
+          "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-BMtILxCHJqYP",
+                  "awslogs-region": "eu-north-1",
+                  "awslogs-stream-prefix": "Nginx"
               },
               "secretOptions": []
           },
