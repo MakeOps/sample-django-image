@@ -16,7 +16,16 @@
           "essential": true,
           "entryPoint": [],
           "command": [],
-          "environment": [],
+          "environment": [
+            {
+              "name": "NGINX_PORT",
+              "value": "80"
+            },
+            {
+              "name": "NGINX_SERVER_NAME",
+              "value": "appser-appse-3gr9fty62prt-181733270.eu-north-1.elb.amazonaws.com"
+            }
+          ],
           "environmentFiles": [],
           "mountPoints": [
             {
