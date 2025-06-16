@@ -19,7 +19,13 @@
           "environment": [
           ],
           "environmentFiles": [],
-          "mountPoints": [],
+          "mountPoints": [
+            {
+              "sourceVolume": "static",
+              "containerPath": "/var/www/static",
+              "readOnly": false
+            }
+          ],
           "volumesFrom": [],
           "secrets": [],
           "dnsServers": [],
@@ -66,7 +72,13 @@
             }
           ],
           "environmentFiles": [],
-          "mountPoints": [],
+          "mountPoints": [
+            {
+              "sourceVolume": "static",
+              "containerPath": "/var/www/static",
+              "readOnly": false
+            }
+          ],
           "volumesFrom": [
             {
               "sourceContainer": "web",
@@ -96,7 +108,12 @@
   "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-vezZA2EC4FHQ",
   "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-cV2IEBp6eT6N",
   "networkMode": "awsvpc",
-  "volumes": [],
+  "volumes": [
+    {
+      "name": "static",
+      "host": {}
+    }
+  ],
   "placementConstraints": [],
   "requiresCompatibilities": [
       "FARGATE"
