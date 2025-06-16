@@ -30,7 +30,7 @@
           "logConfiguration": {
               "logDriver": "awslogs",
               "options": {
-                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-BMtILxCHJqYP",
+                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-fwqHlo2C3noY",
                   "awslogs-region": "eu-north-1",
                   "awslogs-stream-prefix": "AppService"
               },
