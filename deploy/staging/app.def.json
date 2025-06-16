@@ -19,13 +19,7 @@
           "environment": [
           ],
           "environmentFiles": [],
-          "mountPoints": [
-            {
-              "sourceVolume": "nginx-config",
-              "containerPath": "/etc/nginx/templates",
-              "readOnly": true
-            }
-          ],
+          "mountPoints": [],
           "volumesFrom": [],
           "secrets": [],
           "dnsServers": [],
@@ -102,12 +96,7 @@
   "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-vezZA2EC4FHQ",
   "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-cV2IEBp6eT6N",
   "networkMode": "awsvpc",
-  "volumes": [
-    {
-      "name": "nginx-config",
-      "host": {}
-    }
-  ],
+  "volumes": [],
   "placementConstraints": [],
   "requiresCompatibilities": [
       "FARGATE"
