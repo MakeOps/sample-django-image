@@ -20,12 +20,7 @@
           "environmentFiles": [],
           "mountPoints": [],
           "volumesFrom": [],
-          "secrets": [
-              {
-                  "name": "SAMPLE_SECRET",
-                  "valueFrom": "arn:aws:secretsmanager:eu-north-1:925313379209:secret:staging/secret/import/sample-BYQGTg"
-              }
-          ],
+          "secrets": [],
           "dnsServers": [],
           "dnsSearchDomains": [],
           "extraHosts": [],
