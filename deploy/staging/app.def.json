@@ -83,8 +83,8 @@
           "credentialSpecs": []
       }
   ],
-  "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-oLkZxUIPlLyK",
-  "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-g00fWiO8e6HO",
+  "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-vezZA2EC4FHQ",
+  "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-cV2IEBp6eT6N",
   "networkMode": "awsvpc",
   "volumes": [],
   "placementConstraints": [],
