@@ -18,7 +18,13 @@
           "command": [],
           "environment": [],
           "environmentFiles": [],
-          "mountPoints": [],
+          "mountPoints": [
+            {
+              "sourceVolume": "nginx-config",
+              "containerPath": "/etc/nginx/templates",
+              "readOnly": true
+            }
+          ],
           "volumesFrom": [],
           "secrets": [],
           "dnsServers": [],
@@ -57,7 +63,12 @@
           "environment": [],
           "environmentFiles": [],
           "mountPoints": [],
-          "volumesFrom": [],
+          "volumesFrom": [
+            {
+              "sourceContainer": "web",
+              "readOnly": true
+            }
+          ],
           "secrets": [],
           "dnsServers": [],
           "dnsSearchDomains": [],
@@ -81,7 +92,12 @@
   "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-vezZA2EC4FHQ",
   "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-cV2IEBp6eT6N",
   "networkMode": "awsvpc",
-  "volumes": [],
+  "volumes": [
+    {
+      "name": "nginx-config",
+      "host": {}
+    }
+  ],
   "placementConstraints": [],
   "requiresCompatibilities": [
       "FARGATE"

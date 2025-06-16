@@ -16,6 +16,8 @@ WORKDIR /app
 
 COPY --from=build /app/.venv /app/.venv
 
+COPY deploy/staging/nginx /etc/nginx/templates
+
 COPY . .
 
 EXPOSE 8000
