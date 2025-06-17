@@ -68,7 +68,7 @@
       }
   ],
   "taskRoleArn": "arn:aws:iam::925313379209:role/WorkerService-WorkerTaskTaskRoleC4141168-QD7HYTG5bdf3",
-  "executionRoleArn": "arn:aws:iam::925313379209:role/WorkerService-WorkerTaskExecutionRole9C03D68C-x9gvNI7M27L5",
+  "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-cV2IEBp6eT6N",
   "networkMode": "awsvpc",
   "volumes": [],
   "placementConstraints": [],
