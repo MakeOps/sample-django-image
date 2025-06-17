@@ -30,24 +30,7 @@
           "environmentFiles": [],
           "mountPoints": [],
           "volumesFrom": [],
-          "secrets": [
-              {
-                  "name": "POSTGRES_PASSWORD",
-                  "valueFrom": "arn:aws:secretsmanager:eu-north-1:925313379209:secret:/staging/databases/postgres/credentials:password::"
-              },
-              {
-                  "name": "POSTGRES_USER",
-                  "valueFrom": "arn:aws:secretsmanager:eu-north-1:925313379209:secret:/staging/databases/postgres/credentials:username::"
-              },
-              {
-                  "name": "POSTGRES_HOST",
-                  "valueFrom": "arn:aws:secretsmanager:eu-north-1:925313379209:secret:/staging/databases/postgres/credentials:host::"
-              },
-              {
-                  "name": "POSTGRES_PORT",
-                  "valueFrom": "arn:aws:secretsmanager:eu-north-1:925313379209:secret:/staging/databases/postgres/credentials:port::"
-              }
-          ],
+          "secrets": [],
           "dnsServers": [],
           "dnsSearchDomains": [],
           "extraHosts": [],
@@ -67,7 +50,7 @@
           "credentialSpecs": []
       }
   ],
-  "taskRoleArn": "arn:aws:iam::925313379209:role/WorkerService-WorkerTaskTaskRoleC4141168-QD7HYTG5bdf3",
+  "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-vezZA2EC4FHQ",
   "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-cV2IEBp6eT6N",
   "networkMode": "awsvpc",
   "volumes": [],
