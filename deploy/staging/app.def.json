@@ -68,7 +68,7 @@
             },
             {
               "name": "NGINX_SERVER_NAME",
-              "value": "*.eu-north-1.elb.amazonaws.com"
+              "value": "t1.project.lula.cloud"
             }
           ],
           "environmentFiles": [],
