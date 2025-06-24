@@ -2,7 +2,7 @@
   "family": "WorkerServiceWorkerTask35D80B3A",
   "containerDefinitions": [
       {
-          "name": "main",
+          "name": "worker",
           "image": "<IMAGE_URI>",
           "cpu": 0,
           "memory": 512,
