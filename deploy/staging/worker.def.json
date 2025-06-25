@@ -40,7 +40,7 @@
           "logConfiguration": {
               "logDriver": "awslogs",
               "options": {
-                  "awslogs-group": "WorkerService-WorkerTaskmainLogGroup1B71AF7A-i2S2jo41MbpY",
+                  "awslogs-group": "WorkerService-WorkerTaskworkerLogGroupBDCBB9F4-hjUGJItE26UJ",
                   "awslogs-region": "eu-north-1",
                   "awslogs-stream-prefix": "worker-service"
               },
