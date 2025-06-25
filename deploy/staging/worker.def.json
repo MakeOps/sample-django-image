@@ -51,7 +51,7 @@
       }
   ],
   "taskRoleArn": "arn:aws:iam::925313379209:role/WorkerService-WorkerTaskTaskRoleC4141168-7mgcOzZsWBAP",
-  "executionRoleArn": "arn:aws:iam::25313379209:role/WorkerService-WorkerTaskExecutionRole9C03D68C-qEMuaAobPQek",
+  "executionRoleArn": "arn:aws:iam::925313379209:role/WorkerService-WorkerTaskExecutionRole9C03D68C-qEMuaAobPQek",
   "networkMode": "awsvpc",
   "volumes": [],
   "placementConstraints": [],
@@ -61,7 +61,7 @@
   "cpu": "256",
   "memory": "512",
   "runtimePlatform": {
-      "cpuArchitecture": "X86_64"
+      "cpuArchitecture": "ARM64"
   },
   "tags": [
       {
