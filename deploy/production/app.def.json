@@ -1,5 +1,5 @@
 {
-  "family": "AppServiceTaskDef33F77042",
+  "family": "AppServiceProdAppServiceTaskDefF7AAB228",
   "containerDefinitions": [
       {
           "name": "web",
@@ -30,7 +30,7 @@
           "logConfiguration": {
               "logDriver": "awslogs",
               "options": {
-                  "awslogs-group": "AppService-AppServiceTaskDefwebLogGroup066CA1AB-hkTUPYOgkeiR",
+                  "awslogs-group": "AppServiceProd-AppServiceTaskDefwebLogGroup066CA1AB-kV0owD9jaRNc",
                   "awslogs-region": "eu-north-1",
                   "awslogs-stream-prefix": "AppService"
               },
@@ -38,10 +38,57 @@
           },
           "systemControls": [],
           "credentialSpecs": []
+      },
+      {
+          "name": "nginx",
+          "image": "public.ecr.aws/nginx/nginx:stable",
+          "cpu": 0,
+          "links": [],
+          "portMappings": [
+              {
+                  "containerPort": 80,
+                  "hostPort": 80,
+                  "protocol": "tcp"
+              }
+          ],
+          "essential": true,
+          "entryPoint": [],
+          "command": [],
+          "environment": [
+            {
+              "name": "NGINX_PORT",
+              "value": "80"
+            },
+            {
+              "name": "NGINX_HOST",
+              "value": "AppSer-AppSe-pl1g1fQAEfYT-29576047.eu-north-1.elb.amazonaws.com"
+            }
+          ],
+          "environmentFiles": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "secrets": [],
+          "dnsServers": [],
+          "dnsSearchDomains": [],
+          "extraHosts": [],
+          "dockerSecurityOptions": [],
+          "dockerLabels": {},
+          "ulimits": [],
+          "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                  "awslogs-group": "AppServiceProd-AppServiceTaskDefnginxLogGroup9EF20E79-84NSIXyULHAm",
+                  "awslogs-region": "eu-north-1",
+                  "awslogs-stream-prefix": "nginx"
+              },
+              "secretOptions": []
+          },
+          "systemControls": [],
+          "credentialSpecs": []
       }
   ],
-  "taskRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefTaskRole9B2E945F-n5oBnvuGxZbC",
-  "executionRoleArn": "arn:aws:iam::925313379209:role/AppService-AppServiceTaskDefExecutionRoleD1C756A8-531RCH0sw3QD",
+  "taskRoleArn": "arn:aws:iam::925313379209:role/AppServiceProd-AppServiceTaskDefTaskRole9B2E945F-SokN4kgk5Kpy",
+  "executionRoleArn": "arn:aws:iam::925313379209:role/AppServiceProd-AppServiceTaskDefExecutionRoleD1C756-Hu6oNVld2hs9",
   "networkMode": "awsvpc",
   "volumes": [],
   "placementConstraints": [],
@@ -53,7 +100,7 @@
   "tags": [
       {
           "key": "Environment",
-          "value": "prod"
+          "value": "production"
       },
       {
           "key": "Application",
