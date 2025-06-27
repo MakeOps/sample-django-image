@@ -1,0 +1,76 @@
+{
+  "family": "WorkerServiceProdWorkerTaskB5C64CBF",
+  "containerDefinitions": [
+      {
+          "name": "worker",
+          "image": "<IMAGE_URI>",
+          "cpu": 0,
+          "memory": 512,
+          "links": [],
+          "portMappings": [],
+          "essential": true,
+          "entryPoint": [],
+          "command": [
+              "/app/.venv/bin/celery",
+              "-A",
+              "app.tasks",
+              "worker",
+              "--loglevel=info"
+          ],
+          "environment": [
+              {
+                  "name": "ENVIRONMENT",
+                  "value": "production"
+              },
+              {
+                  "name": "REDIS_URL",
+                  "value": "redis://dat-ca-hkzmmi3px8bl.luwxvz.0001.eun1.cache.amazonaws.com:6379/0"
+              }
+          ],
+          "environmentFiles": [],
+          "mountPoints": [],
+          "volumesFrom": [],
+          "secrets": [],
+          "dnsServers": [],
+          "dnsSearchDomains": [],
+          "extraHosts": [],
+          "dockerSecurityOptions": [],
+          "dockerLabels": {},
+          "ulimits": [],
+          "logConfiguration": {
+              "logDriver": "awslogs",
+              "options": {
+                  "awslogs-group": "WorkerServiceProd-WorkerTaskworkerLogGroupBDCBB9F4-LZxEpqFcjVV3",
+                  "awslogs-region": "eu-north-1",
+                  "awslogs-stream-prefix": "worker"
+              },
+              "secretOptions": []
+          },
+          "systemControls": [],
+          "credentialSpecs": []
+      }
+  ],
+  "taskRoleArn": "arn:aws:iam::925313379209:role/WorkerServiceProd-WorkerTaskTaskRoleC4141168-AHzo0Y3NonpN",
+  "executionRoleArn": "arn:aws:iam::925313379209:role/WorkerServiceProd-WorkerTaskExecutionRole9C03D68C-LcVLwuP6KOiU",
+  "networkMode": "awsvpc",
+  "volumes": [],
+  "placementConstraints": [],
+  "requiresCompatibilities": [
+      "FARGATE"
+  ],
+  "cpu": "256",
+  "memory": "512",
+  "runtimePlatform": {
+      "cpuArchitecture": "X86_64"
+  },
+  "tags": [
+      {
+          "key": "Environment",
+          "value": "production"
+      },
+      {
+          "key": "Application",
+          "value": "parsleybox"
+      }
+  ]
+}
