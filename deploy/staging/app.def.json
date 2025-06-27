@@ -68,7 +68,7 @@
             },
             {
               "name": "NGINX_SERVER_NAME",
-              "value": "t1.project.lula.cloud"
+              "value": "AppSer-AppSe-3Gr9fTy62PrT-181733270.eu-north-1.elb.amazonaws.com"
             }
           ],
           "environmentFiles": [],
