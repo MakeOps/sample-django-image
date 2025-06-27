@@ -11,6 +11,7 @@
           "essential": true,
           "entryPoint": [],
           "command": [
+              "/app/.venv/bin/celery",
               "-A",
               "app.tasks",
               "worker",
