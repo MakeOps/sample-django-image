@@ -60,7 +60,7 @@
               "value": "80"
             },
             {
-              "name": "NGINX_HOST",
+              "name": "NGINX_SERVER_NAME",
               "value": "AppSer-AppSe-pl1g1fQAEfYT-29576047.eu-north-1.elb.amazonaws.com"
             }
           ],

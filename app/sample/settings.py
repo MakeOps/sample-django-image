@@ -30,7 +30,9 @@ DEBUG = os.environ.get('DEBUG', 'false') == 'true'
 
 ALLOWED_HOSTS = [
     '127.0.0.1',
-    "appser-appse-3gr9fty62prt-181733270.eu-north-1.elb.amazonaws.com"
+    "AppSer-AppSe-pl1g1fQAEfYT-29576047.eu-north-1.elb.amazonaws.com",
+    "AppSer-AppSe-3Gr9fTy62PrT-181733270.eu-north-1.elb.amazonaws.com",
+    "t1.project.lula.cloud"
 ]
 
 # If running on AWS Fargate, add the Fargate IP address to the allowed hosts
